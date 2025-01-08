@@ -20,6 +20,7 @@ public class CustomerRestController {
     public Customer save(Customer customer){
         return customerManager.saveCustomer(customer);
     }
+    @GetMapping("/customers/{id}")
     public Customer getCustomer(Long id){
         return customerManager.customerById(id);
     }
